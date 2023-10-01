@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Gabarito:wght@800&family=Nunito+Sans:opsz,wght@6..12,600&family=Nunito:wght@300&family=Pixelify+Sans&family=Poppins:wght@500&family=Roboto:wght@100&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffdf6e;
+}
+video{
+    /* display: flex; */
+    /* position: relative; */
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#Header{
+    background: cover;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Logo{
+    width: 100px;
+}
+.Logo a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Gabarito', cursive;
+}
+.Nama_Header{
+    font-family: 'Roboto', sans-serif;
+    margin-top:20% ;
+    font-size: 30px;
+    font-weight: 600;
+}
+.Nama_Header h1{
+    font-size: 80px;
+    font-family: 'Gabarito', cursive;
+    font-style: bold;
+    font-weight: 800;
+}
+
+/* Page About */
+#about{
+    border-top: 1px solid;
+    border-color: rgba(226, 213, 213, 0.3);
+    padding: 80px 0;
+    background-color:rgb(226, 213, 213, 0.25);
+    font-family: 'Nunito Sans', sans-serif;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about_kolom_1{
+    flex-basis:35% ;
+}
+.about_kolom_1 img{
+    width: 100%;
+    border-radius:20px ;
+}
+.about_kolom_2{
+    flex-basis: 60%;
+} 
+.about_kolom_2 h1{
+    font-size: 65px;
+    font-weight: 600;
+}
+.about_kolom_2 p{
+    font-size: 30px;
+}
+
+/* Page Skill */
+#Skill{
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 30px 0; 
+}
+.Judul_Skill{
+    font-family: 'Nunito Sans', sans-serif;
+
+    font-size: 60px;
+    font-weight: 600;
+}
+.List_Skill{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    
+}
+.List_Skill div{
+    background-color: antiquewhite;
+    padding: 60px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    border: 1px solid;
+    transition: 0.5s;
+}
+.List_Skill div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.List_Skill div:hover{
+    background-color: rgb(224, 127, 0);
+    transform: translateY(-10px);
+}
+
+
+/* Contact Info */
+#Contact{
+    font-family:'Nunito Sans',sans-serif ;
+    background-color: antiquewhite;
+}
+.contact_kolom_1{
+    flex-basis: 35%;
+}
+.contact_kolom_2{
+    flex-basis: 60%;
+}
+.contact_kolom_1 p{
+    margin-top: 30px;
+}
+.contact_kolom_1 p i{
+    color: black;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.akun_medsos{
+    margin-top: 30px;
+}
+.akun_medsos a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: black;
+    display: inline-block;
+}
+.contact_kolom_2 button{
+    border-radius: 5px;
+    background-color: #eba832;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family:'Nunito Sans',sans-serif ;
+
+    transition: 0.5s;
+}
+
+.contact_kolom_2 button:hover{
+    background-color: #4eff2b;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #ffdf6e;
+    padding: 15px;
+    margin: 15px 0;
+    color: black;
+    font-size: 18px;
+    border-radius: 5px;
+}
